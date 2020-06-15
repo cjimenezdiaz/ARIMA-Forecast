@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_error
 warnings.filterwarnings("ignore")
 
 # Download the information of closing prices from Yahoo Finance
-start_date = '01-Jan-10'
+start_date = '01-Jan-08'
 end_date   = '14-Feb-20'
 ticker     = 'V' # Set the ticker (Visa in this example)
 
@@ -114,7 +114,7 @@ print('Test MSE: {mse}'.format(mse=error))
 
 # Plot forecasted and actual values
 plt.plot(test_set)
-plt.plot(test_set.index,predictions, color='red')
+plt.plot(test_set.index, predictions, color='red')
 plt.title('Visa Stock Price')
 plt.xlabel('Date')
 plt.ylabel('Price in dollars')
